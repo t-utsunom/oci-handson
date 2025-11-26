@@ -13,6 +13,8 @@ first_entry=true
 commands=(
     "oci limits value list --service-name compartments --name compartment-count -c $tenancy_ocid --region $region"
     "oci limits value list --service-name vcn --name vcn-count -c $tenancy_ocid --region $region"
+    "oci limits value list --service-name compute --name standard-e6-core-count -c $tenancy_ocid --region $region"
+    "oci limits value list --service-name compute --name standard-e6-memory-count -c $tenancy_ocid --region $region"
     "oci limits value list --service-name compute --name standard-e5-core-count -c $tenancy_ocid --region $region"
     "oci limits value list --service-name compute --name standard-e5-memory-count -c $tenancy_ocid --region $region"
     "oci limits value list --service-name compute --name standard-e4-core-count -c $tenancy_ocid --region $region"
@@ -24,6 +26,7 @@ commands=(
     "oci limits value list --service-name database --name vm-standard-e5-ocpu-count -c $tenancy_ocid --region $region"
     "oci limits value list --service-name database --name vm-standard-e4-ocpu-count -c $tenancy_ocid --region $region"
     "oci limits value list --service-name database --name vm-standard3-ocpu-count -c $tenancy_ocid --region $region"
+    "oci limits value list --service-name database --name vm-block-storage-gb -c $tenancy_ocid --region $region"
 )
 
 for cmd in "${commands[@]}"; do
