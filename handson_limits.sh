@@ -26,6 +26,7 @@ commands=(
     "oci limits value list --service-name database --name vm-standard-e5-ocpu-count -c $tenancy_ocid --region $region"
     "oci limits value list --service-name database --name vm-standard-e4-ocpu-count -c $tenancy_ocid --region $region"
     "oci limits value list --service-name database --name vm-standard3-ocpu-count -c $tenancy_ocid --region $region"
+    "oci limits value list --service-name database --name vm-standard-x86-ecpu-count -c $tenancy_ocid --region $region"
     "oci limits value list --service-name database --name vm-block-storage-gb -c $tenancy_ocid --region $region"
 )
 
